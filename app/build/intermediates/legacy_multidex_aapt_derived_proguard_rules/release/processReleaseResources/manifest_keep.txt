@@ -1,0 +1,2 @@
+# Referenced at C:\Users\abimb\Desktop\soundcodeChat\app\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:59
+-keep class com.soundcode.chat.utils.MyApp { <init>(...); }

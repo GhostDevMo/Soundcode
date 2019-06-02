@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.soundcode.chat.activities.authentication.VerifyModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            tools:context=".activities.authentication.PhoneVerifyAct">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+
+        </LinearLayout>
+
+        <carbon.widget.LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_rounded"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_55sdp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Verification Code"
+                android:textColor="#000000"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneNumberEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text='@{"Please type the verification code sent to "+model.phoneNumber}'
+                android:textAlignment="center"
+                android:textColor="@color/carbon_grey_800" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@{model.finishedTyping1?@drawable/round_edit_text_green_bg:@drawable/round_edit_text_bg}"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="@dimen/_2sdp"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@{model.finishedTyping2?@drawable/round_edit_text_green_bg:@drawable/round_edit_text_bg}"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="@dimen/_2sdp"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@{model.finishedTyping3?@drawable/round_edit_text_green_bg:@drawable/round_edit_text_bg}"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="@dimen/_2sdp"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@{model.finishedTyping4?@drawable/round_edit_text_green_bg:@drawable/round_edit_text_bg}"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="@dimen/_2sdp"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@{model.finishedTyping5?@drawable/round_edit_text_green_bg:@drawable/round_edit_text_bg}"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="@dimen/_2sdp"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@{model.finishedTyping6?@drawable/round_edit_text_green_bg:@drawable/round_edit_text_bg}"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="@dimen/_2sdp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <carbon.widget.Button
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:background="@{!model.finishedTyping6?@color/white:@color/colorPrimary}"
+                android:clickable="@{model.finishedTyping4}"
+                android:gravity="center"
+                android:onClick="verifyPhone"
+                android:text="Verify"
+                android:textAllCaps="false"
+                android:textColor="@{model.finishedTyping6?@color/white:@color/colorPrimary}"
+                app:carbon_cornerRadius="@dimen/_20sdp"
+                app:carbon_elevation="@dimen/_2sdp" />
+
+
+        </carbon.widget.LinearLayout>
+    </RelativeLayout>
+</layout>

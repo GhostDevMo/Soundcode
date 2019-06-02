@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1020379921823",
+    "firebase_url": "https://soundcode-chat-e6daa.firebaseio.com",
+    "project_id": "soundcode-chat-e6daa",
+    "storage_bucket": "soundcode-chat-e6daa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020379921823:android:12debefe97aa419a",
+        "android_client_info": {
+          "package_name": "com.soundcode.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020379921823-rkdfrj1d18fg3dejs6pdoprgggnh1b53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJWK427rXd_82MN0rYzTWXlHKrR-yqJHc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

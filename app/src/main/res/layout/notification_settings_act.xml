@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.soundcode.chat.activities.settings.new_settings.notification_settings.NotificationModel" />
+
+        <import type="com.soundcode.chat.R" />
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.settings.new_settings.notification_settings.NotificationSettingsAct">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/layout_app_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/pref_title_new_message_notifications"
+                android:textColor="@color/carbon_black"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/notification_switch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:sb_enable_effect="true"
+                app:sb_show_indicator="false" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:background="@color/carbon_grey_200" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="@{model.notificationEnabled?true:false}"-->
+
+            <!--android:onClick="chooseRingtone"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="@dimen/_8sdp">-->
+
+            <!--<TextView-->
+
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/pref_title_ringtone"-->
+                <!--android:textColor="@{model.notificationEnabled?@color/carbon_black:@color/carbon_grey_600}"-->
+                <!--android:textSize="@dimen/_12ssp" />-->
+
+            <!--<com.suke.widget.SwitchButton-->
+                <!--android:id="@+id/vibrate_switkch_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:visibility="invisible" />-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginStart="@dimen/_12sdp"-->
+            <!--android:layout_marginEnd="@dimen/_12sdp"-->
+            <!--android:background="@color/carbon_grey_200" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/pref_title_vibrate"
+                android:textColor="@color/carbon_black"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/vibrate_switch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:sb_enable_effect="true"
+                app:sb_show_indicator="false" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

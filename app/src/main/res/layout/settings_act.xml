@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <carbon.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".activities.settings.new_settings.SettingsAct">
+
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/layout_app_bar" />
+
+        <LinearLayout
+            android:id="@+id/BtnProfileStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:srcCompat="@drawable/user_img" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:background="@color/white"
+                    android:gravity="start"
+                    android:text="Alpha Apps"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:background="@color/white"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text="I am using HiFive chat app"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/_12ssp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_42ssp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/carbon_grey_300" />
+
+
+        <LinearLayout
+            android:onClick="openProfileSettings"
+            android:id="@+id/BtnProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                app:srcCompat="@drawable/ic_account_circle" />
+
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="Profile"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_42ssp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/carbon_grey_300" />
+
+        <LinearLayout
+            android:onClick="openNotificationAct"
+            android:id="@+id/BtnNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                app:srcCompat="@drawable/ic_notifications" />
+
+            <TextView
+                android:id="@+id/notifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="Notifications"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_42ssp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/carbon_grey_300" />
+
+        <LinearLayout
+            android:id="@+id/BtnChat"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                app:srcCompat="@drawable/ic_chat" />
+
+            <TextView
+                android:id="@+id/chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="Chat"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_42ssp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/carbon_grey_300" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/BtnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                app:srcCompat="@drawable/ic_info" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="About"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+
+    </carbon.widget.LinearLayout>
+</layout>

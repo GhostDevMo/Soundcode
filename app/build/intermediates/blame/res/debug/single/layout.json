@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\picker_dialog.xml",
+        "source": "C:\\Users\\abimb\\.gradle\\caches\\transforms-1\\files-1.1\\material-file-picker-1.0.0.aar\\81cab39ae2b17090db1f5dfa9e8a1c54\\res\\layout\\picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\phone_verifiy_act.xml",
+        "source": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\src\\main\\res\\layout\\phone_verifiy_act.xml"
+    },
+    {
+        "merged": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\sign_in_act.xml",
+        "source": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\src\\main\\res\\layout\\sign_in_act.xml"
+    },
+    {
+        "merged": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\settings_act.xml",
+        "source": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\src\\main\\res\\layout\\settings_act.xml"
+    },
+    {
+        "merged": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\notification_settings_act.xml",
+        "source": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\src\\main\\res\\layout\\notification_settings_act.xml"
+    },
+    {
+        "merged": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\file_row.xml",
+        "source": "C:\\Users\\abimb\\.gradle\\caches\\transforms-1\\files-1.1\\material-file-picker-1.0.0.aar\\81cab39ae2b17090db1f5dfa9e8a1c54\\res\\layout\\file_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\profile_settings_act.xml",
+        "source": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\src\\main\\res\\layout\\profile_settings_act.xml"
+    },
+    {
+        "merged": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\layout_spinner.xml",
+        "source": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\src\\main\\res\\layout\\layout_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\layout_feed_row.xml",
+        "source": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\src\\main\\res\\layout\\layout_feed_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\layout_app_bar.xml",
+        "source": "C:\\Users\\abimb\\Desktop\\soundcodeChat\\app\\src\\main\\res\\layout\\layout_app_bar.xml"
+    }
+]

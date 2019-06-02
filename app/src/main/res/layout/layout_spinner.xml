@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="hint"
+            type="String" />
+
+        <variable
+            name="positiveBtn"
+            type="String" />
+
+    </data>
+
+    <carbon.widget.RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:carbon_cornerRadius="@dimen/_3sdp"
+        app:carbon_elevation="@dimen/_1sdp">
+
+
+        <com.soundcode.chat.utils.custom_spinner.SearchableSpinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/dropdown"
+            android:background="@color/white"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_12ssp"
+            bind:setSpinnerPositiveBtn="@{positiveBtn}"
+            bind:setSpinnerTitle="@{hint}" />
+
+        <ImageView
+            android:id="@+id/dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:src="@drawable/ic_arrow_down" />
+
+    </carbon.widget.RelativeLayout>
+</layout>

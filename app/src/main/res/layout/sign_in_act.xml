@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@color/white" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_450sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/sign_in_bg"
+            android:padding="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_120sdp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Enter Country Code and Phone Number"
+                android:textColor="#4B4B4B"
+                android:textStyle="bold" />
+
+
+            <include
+                android:id="@+id/spinner"
+                layout="@layout/layout_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="-21dp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                bind:hint='@{"Choose country code"}'
+                bind:positiveBtn='@{"Cancel"}' />
+
+            <EditText
+                android:id="@+id/phoneNumberEditText"
+                android:layout_width="@dimen/_170sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/spinner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/round_edit_text_grey_bg"
+                android:gravity="center"
+                android:hint="enter phone number"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneNumberEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="We Will Send you a One Time Password to your mobile number"
+                android:textAlignment="center" />
+
+            <carbon.widget.Button
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="sendOtp"
+                android:text="Send Otp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:carbon_cornerRadius="@dimen/_20sdp"
+                app:carbon_elevation="@dimen/_2sdp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>
