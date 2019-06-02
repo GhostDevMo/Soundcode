@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: ca.barrenechea.header-decor:header-decor:0.2.8@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/header-decor-0.2.8.aar/17863e02999debb9e1e33357e36c7ac8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/header-decor-0.2.8.aar/17863e02999debb9e1e33357e36c7ac8/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ca.barrenechea.header-decor/header-decor/0.2.8/1d39f177e23f94b894098193901ffe691ce689c3/header-decor-0.2.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

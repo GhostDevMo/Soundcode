@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: tk.zielony:carbon:0.15.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/carbon-0.15.2.aar/7c8dd197406e7c631ecea7a26d461f2a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/carbon-0.15.2.aar/7c8dd197406e7c631ecea7a26d461f2a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tk.zielony/carbon/0.15.2/28a00afed4fb07e7394defb0bcdd695a09e8bb87/carbon-0.15.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
